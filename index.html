@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple A - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Triple A</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html#cards">Cards</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="cards">
+        <div class="card-container">
+            <div class="card" onclick="location.href='mental-health.html'">
+                <img src="assets/mental.jpg" alt="Mental Health">
+                <h2>Mental Health</h2>
+                <p>Learn more about mental health.Contact our experts</p>
+            </div>
+            <div class="card" onclick="location.href='diet.html'">
+                <img src="assets/diet.jpg" alt="Diet">
+                <h2>Diet</h2>
+                <p>Discover diet tips for athletes.Contact our experts!</p>
+            </div>
+            <div class="card" onclick="location.href='tips.html'">
+                <img src="assets/tips.jpg" alt="Tips">
+                <h2>Tips</h2>
+                <p>Get useful tips for improving your performance.</p>
+            </div>
+            <div class="card" onclick="location.href='ai-chatbot.html'">
+                <img src="assets/ai.jpg" alt="Triple Chatbot">
+                <h2>Triple Chatbot</h2>
+                <p>Interact with Triple for personalized advice</p>
+            </div>
+        </div>
+    </section>
+    <section id="Comment" data-nav="Comment it!">
+        <div class="cForm" id="cForm">
+          <h2 id="hcomment">Comment Area!</h2>
+          <form id="commentForm" onsubmit="return validateForm();">
+            <input
+              id="userName"
+              type="text"
+              placeholder="Enter username"
+              required
+            /><br /><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            /><br /><br />
+            <input
+              type="text"
+              id="comment"
+              placeholder="Enter your comment"
+              required
+            /><br /><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div>
+          <ul id="commentArea"></ul>
+        </div>
+      </section>
+</body>
+</html>
+
