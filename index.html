@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple A - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>Triple A</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html#cards">Cards</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="cards">
+        <div class="card-container">
+            <div class="card" onclick="location.href='mental-health.html'">
+                <img src="assets/mental.jpg" alt="Mental Health">
+                <h2>Mental Health</h2>
+                <p>Learn more about mental health.Contact our experts</p>
+            </div>
+            <div class="card" onclick="location.href='diet.html'">
+                <img src="assets/diet.jpg" alt="Diet">
+                <h2>Diet</h2>
+                <p>Discover diet tips for athletes.Contact our experts!</p>
+            </div>
+            <div class="card" onclick="location.href='tips.html'">
+                <img src="assets/tips.jpg" alt="Tips">
+                <h2>Tips</h2>
+                <p>Get useful tips for improving your performance.</p>
+            </div>
+            <div class="card" id="ai-card">
+                <img src="assets/ai.jpg" alt="Triple Chatbot">
+                <h2>Triple Chatbot</h2>
+                <p>Interact with Triple for personalized advice</p>
+            </div>
+        </div>
+    </section>
+    <script>
+      window.embeddedChatbotConfig = {
+          chatbotId: "IYettfUMDhMGX0kJFt0xG",
+          domain: "www.chatbase.co"
+      }
+
+      // Add event listener to the AI card
+      document.addEventListener("DOMContentLoaded", function() {
+          const aiCard = document.getElementById('ai-card');
+          aiCard.addEventListener('click', function() {
+              window.chatbase.showChat();
+          });
+      });
+  </script>
+  <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="IYettfUMDhMGX0kJFt0xG"
+      domain="www.chatbase.co"
+      defer>
+  </script>
+      <footer>
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,265 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/homeback2.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2{
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*navbar styling*/
+nav {
+    background-color: #0e2433;
+    background: #0e2433;
+    background: linear-gradient(
+        0deg,
+        rgb(173, 109, 66) 0%,
+        rgb(2, 42, 77) 100%
+    );
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* card styling */
+
+.card-container {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background: #0e2433;
+    border: 4px solid #ddd;
+    width: 22%;
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    width: 250px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+    margin: 16px 0 8px;
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+}
+
+.card p {
+    color: white;
+    margin: 0 16px 16px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area while maintaining its aspect ratio */
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/*login styling*/
+
+.login {
+    width: 80%;
+    margin: 100px auto;
+    background: #0e2433;
+    background: linear-gradient(
+        0deg,
+        rgb(104, 48, 11) 0%,
+        rgb(6, 38, 66) 100%
+    );
+    padding: 20px;
+    border: 5px solid rgb(73, 119, 161);
+    border-radius: 20px;
+}
+
+.login h2 {
+    margin-top: 0;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.login input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login select{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login select option {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* comment area styling*/
+/* styles.css */
+
+/* sections styling */
+.brief{
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(8px);
+    border: 4px solid #ddd;
+    border-radius: 8px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.brief h1{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+.expertheader{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: xx-large;
+    backdrop-filter: blur(8px);
+    border: 2px solid gainsboro;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 25%;
+}
+a{
+    color: cadetblue;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0e2433;
+    background: #0e2433;
+    background: linear-gradient(
+        0deg,
+        rgb(173, 109, 66) 0%,
+        rgb(2, 42, 77) 100%
+    );
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    }
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+    }
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    }
+
+.footer-social a {
+    color: white;
+    margin-right: 10px;
+    }
